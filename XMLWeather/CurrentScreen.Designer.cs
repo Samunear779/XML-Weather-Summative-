@@ -78,7 +78,7 @@
             this.tempLabel.BackColor = System.Drawing.Color.Transparent;
             this.tempLabel.Font = new System.Drawing.Font("Lucida Sans", 72F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.tempLabel.ForeColor = System.Drawing.Color.White;
-            this.tempLabel.Location = new System.Drawing.Point(32, 66);
+            this.tempLabel.Location = new System.Drawing.Point(52, 66);
             this.tempLabel.Name = "tempLabel";
             this.tempLabel.Size = new System.Drawing.Size(138, 109);
             this.tempLabel.TabIndex = 26;
