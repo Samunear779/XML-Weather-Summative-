@@ -19,13 +19,29 @@ namespace XMLWeather
 
         public void DisplayCurrent()
         {
-            cityOutput.Text = Form1.days[0].location;
+            cityOutput.Text = Form1.days[0].location + " ON";
             dateLabel.Text = Form1.days[0].date;
-            tempLabel.Text = Form1.days[0].currentTemp;
+            tempLabel.Text = Convert.ToDouble(Form1.days[0].currentTemp).ToString(".");
             conditionLabel.Text = Form1.days[0].condition;
-            maxLabel.Text = Form1.days[0].tempHigh;
-            minLabel.Text = Form1.days[0].tempLow;
+            //minLabel.Text = Form1.days[0].tempLow + "  / " + Form1.days[0].tempHigh;
+            minLabel.Text = Convert.ToDouble(Form1.days[0].tempLow).ToString(".") + "  / " + Convert.ToDouble(Form1.days[0].tempHigh).ToString(".");
 
+            date2Label.Text = Form1.days[1].date;
+            date3Label.Text = Form1.days[2].date;
+            date4Label.Text = Form1.days[3].date;
+
+            min2Label.Text = Convert.ToDouble(Form1.days[1].tempLow).ToString(".") + "  /";
+            min3Label.Text = Convert.ToDouble(Form1.days[2].tempLow).ToString(".") + "  /";
+            min4Label.Text = Convert.ToDouble(Form1.days[3].tempLow).ToString(".") + "  /";
+
+            max2Label.Text = Convert.ToDouble(Form1.days[1].tempHigh).ToString(".");
+            max3Label.Text = Convert.ToDouble(Form1.days[2].tempHigh).ToString(".");
+            max4Label.Text = Convert.ToDouble(Form1.days[3].tempHigh).ToString(".");
+
+            condition2Label.Text = Form1.days[1].condition;
+            condition3Label.Text = Form1.days[2].condition;
+            condition4Label.Text = Form1.days[3].condition;
         }
+
     }
 }

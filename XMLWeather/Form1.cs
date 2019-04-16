@@ -50,14 +50,58 @@ namespace XMLWeather
                 //temp low 
                 reader.ReadToFollowing("temperature");
                 d.tempLow = reader.GetAttribute("min");
-
                 //temp High
                 d.tempHigh = reader.GetAttribute("max");
+
+                Day d2 = new Day();
+                //d2
+                reader.ReadToFollowing("time");
+                d2.date = reader.GetAttribute("day");
+                //2Condition
+                reader.ReadToFollowing("symbol");
+                d2.condition = reader.GetAttribute("name");
+                //2L 
+                reader.ReadToFollowing("temperature");
+                d2.tempLow = reader.GetAttribute("min");
+                //2H
+                d2.tempHigh = reader.GetAttribute("max");
+             
+
+                Day d3 = new Day();
+                //d3
+                reader.ReadToFollowing("time");
+                d3.date = reader.GetAttribute("day");
+                //3Condition
+                reader.ReadToFollowing("symbol");
+                d3.condition = reader.GetAttribute("name");
+                //3L
+                reader.ReadToFollowing("temperature");
+                d3.tempLow = reader.GetAttribute("min");
+                //3H
+                d3.tempHigh = reader.GetAttribute("max");
+              
+
+                Day d4 = new Day();
+                //d4
+                reader.ReadToFollowing("time");
+                d4.date = reader.GetAttribute("day");
+                //4Condition
+                reader.ReadToFollowing("symbol");
+                d4.condition = reader.GetAttribute("name");
+                //4L
+                reader.ReadToFollowing("temperature");
+                d4.tempLow = reader.GetAttribute("min");
+                //4H
+                d4.tempHigh = reader.GetAttribute("max");
+           
 
                 //if day object not null add to the days list
                 if (d.date!= null)
                 {
                     days.Add(d);
+                    days.Add(d2);
+                    days.Add(d3);
+                    days.Add(d4);
                 }             
             }
         }
