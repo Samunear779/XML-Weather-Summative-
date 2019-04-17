@@ -46,6 +46,8 @@
             this.condition2Label = new System.Windows.Forms.Label();
             this.condition3Label = new System.Windows.Forms.Label();
             this.condition4Label = new System.Windows.Forms.Label();
+            this.CelsiusLabel = new System.Windows.Forms.Label();
+            this.degreeLabel = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // cityOutput
@@ -252,12 +254,38 @@
             this.condition4Label.TabIndex = 58;
             this.condition4Label.Text = "label3";
             // 
+            // CelsiusLabel
+            // 
+            this.CelsiusLabel.BackColor = System.Drawing.Color.Transparent;
+            this.CelsiusLabel.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.CelsiusLabel.ForeColor = System.Drawing.Color.Silver;
+            this.CelsiusLabel.Location = new System.Drawing.Point(176, 89);
+            this.CelsiusLabel.Name = "CelsiusLabel";
+            this.CelsiusLabel.Size = new System.Drawing.Size(22, 21);
+            this.CelsiusLabel.TabIndex = 60;
+            this.CelsiusLabel.Text = "C";
+            this.CelsiusLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
+            // degreeLabel
+            // 
+            this.degreeLabel.BackColor = System.Drawing.Color.Transparent;
+            this.degreeLabel.Font = new System.Drawing.Font("Constantia", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.degreeLabel.ForeColor = System.Drawing.Color.Silver;
+            this.degreeLabel.Location = new System.Drawing.Point(161, 80);
+            this.degreeLabel.Name = "degreeLabel";
+            this.degreeLabel.Size = new System.Drawing.Size(22, 21);
+            this.degreeLabel.TabIndex = 61;
+            this.degreeLabel.Text = "o";
+            this.degreeLabel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            // 
             // CurrentScreen
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.Black;
             this.BackgroundImage = ((System.Drawing.Image)(resources.GetObject("$this.BackgroundImage")));
+            this.Controls.Add(this.degreeLabel);
+            this.Controls.Add(this.CelsiusLabel);
             this.Controls.Add(this.condition4Label);
             this.Controls.Add(this.condition3Label);
             this.Controls.Add(this.condition2Label);
@@ -300,5 +328,7 @@
         private System.Windows.Forms.Label condition2Label;
         private System.Windows.Forms.Label condition3Label;
         private System.Windows.Forms.Label condition4Label;
+        private System.Windows.Forms.Label CelsiusLabel;
+        private System.Windows.Forms.Label degreeLabel;
     }
 }
